@@ -60,7 +60,9 @@ struct Home: View {
                         .fontWeight(.bold)
                     
                     Text(i.description)
-                        //font des
+                        .font(.caption)
+                        .lineLimit(4)
+                        .multilineTextAlignment(.leading)
                 }
             }
                 }
