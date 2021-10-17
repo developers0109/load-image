@@ -42,7 +42,11 @@ struct Home: View {
                         . resizable()
                         .scaledToFill()
                         .frame(width: 120, height: 170)
-                        //background
+                        .background(Image("loader")
+                                        .resizable()
+                                        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                                        .frame(width: 60, height: 30))
+                        .cornerRadius(10)
                         
                 } else {
                     Image("loader")
